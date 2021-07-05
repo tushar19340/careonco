@@ -16,24 +16,55 @@
 body{
     overflow-x: hidden;
 }
+
+/* ------------------ Navbar CSS ------------------ */
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+ul.navbar-nav {
+    margin-left: auto;
+}
+li.nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 0.3rem;
+}
+li.nav-item.active {
+    border-bottom: 2px solid black; 
+    
+}
+
+/* ------------------ Navbar CSS ------------------ */
+
+.font-body {
+    font-size: var(--text-small);
+}
+
+.head-font {
+    font-family: 'Playfair Display', serif;
+}
+.font-med{
+    font-size: var(--heading-mid);
+}
+
 .top-div {
-    height: 60vh;
+    height: 50vh;
+    max-height: 700px;
     background-color: #D2FF73;
-    margin-top: 70PX;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .top-div-wrapper {
+    position: relative;
+    top: -1.5rem;
     height: fit-content;
     width: 60%;
 }
 
-.head-font {
-    font-family: 'Playfair Display', serif;
-    font-size: var(--heading-mid);
-}
 .top-div h1{
     font-size: var(--heading);
     font-weight: bold;
@@ -43,6 +74,9 @@ p{
     font-size: var(--text-small);
     color: #333333;
 }
+
+
+/* ------------------ Body-Content ------------------ */
 
 .info-row {
     margin-top: 10rem;
