@@ -1,27 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;700&family=Marcellus&display=swap"
+		rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/stylesheets/navbar.css">
+    <link rel="stylesheet" href="./static/stylesheets/TEPscan.css" />
 
     <title>CareOnco</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"
+        style="background-color: white;height: 70px; font-size: 15px;">
+        <div class="container-fluid" style="background-color: white;">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/careonco.jpeg" class="me-2" alt="" width="40" height="40">
+                <span style="color: #0056BE;font-weight: bold;">Care</span><span style="color: #339966;font-weight: bold;">Onco</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link head-font" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="#">Publications</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link head-font" href="/TEPscan.html">TEPscan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/enroll.html">Enroll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
     <div class="top-div">
-      <h1></h1>
+        <div class="top-div-wrapper text-center">
+            <h1 class="head-font">OVERVIEW</h1>
+            <p>
+                Early stage investment in a R&D focused company that has
+                developed path breaking products for cancer care and early
+                detection and screening/diagnosis.
+            </p>
+        </div>
     </div>
 
+    <div class="container mt-5">
+        <!-- Type - A Design -->
+        <div class="row info-row">
+            <div class="col-12 col-md-6">
+                <div class="img-div type-a">
+                    <img src="./assets/img1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="bg-div type-a">
+                    <div class="bg-text type-a">
+                        <h2 class="head-font text-center font-med pb-4">UNIQUE</h2>
+                        <p>
+                            CareOnco is extremely unique because we are
+                            using a technique which is not relying on the
+                            tumour cells for detection.
+                            <br />
+                            <br />
+                            It only uses the components of the blood that is
+                            already there (platelets) and looks for
+                            signatures which makes this extremely accurate (
+                            very high sensitivity)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Type - B Design -->
+        <div class="row info-row">
+            <div class="col-12 col-md-6 order-1" style="z-index: 1">
+                <div class="bg-div type-b">
+                    <div class="bg-text type-b">
+                        <h2 class="head-font text-center font-med pb-4">
+                            ACHIEVEMENTS
+                        </h2>
+                        <p>
+                            The intellectual assets that we have built is in
+                            the area a low cost testing, AI, ML and Deep
+                            Learning tools to build a robust “Bench to
+                            Bedside” assembly line for the products that we
+                            will introduce globally – <span style="color: #2F80ED;">an early detection
+                                gene pool to help in analyzing cancer.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 order-0 order-md-1">
+                <div class="img-div type-b">
+                    <img src="./assets/img1.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 
-  </body>
 </html>

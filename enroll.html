@@ -1,42 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;700&family=Marcellus&display=swap"
 		rel="stylesheet">
 
-	<title>CareOnco</title>
-</head>
+		<link rel="stylesheet" href="./static/stylesheets/navbar.css">
+        <link rel="stylesheet" href="./static/stylesheets/enroll.css" />
 
-<body>
-	<div class="top-div">
-		<div class="top-div-wrapper text-center">
-			<h1 class="head-font">OVERVIEW</h1>
-			<p>
-				Early stage investment in a R&D focused company that has
-				developed path breaking products for cancer care and early
-				detection and screening/diagnosis.
-			</p>
+        <title>CareOnco</title>
+    </head>
+
+    <body>
+        <div class="top-div">
+            <div class="top-div-wrapper text-center">
+                <h1 class="head-font">ENROLL</h1>
+                <p>
+                    Early stage investment in a R&D focused company that has
+                    developed path breaking products for cancer care and early
+                    detection and screening/diagnosis.
+                </p>
+            </div>
+        </div>
+
+		<div class="container">
+			<div class="line-heading">
+				<h2 class="head-font">PROCEDURE</h2>
+				<div class="underline">
+				</div>
+			</div>
+
+			<div class="row row-cols-1 row-cols-md-3 gy-5">
+				<div class="col">
+					<div class="myCard">
+						<div class="myCard-body">
+							This some sample text. Replace it with original text.
+						</div>
+						<div class="myCard-step">
+							1
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="myCard">
+						<div class="myCard-body">
+							This some sample text. Replace it with original text.
+						</div>
+						<div class="myCard-step">
+							2
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="myCard">
+						<div class="myCard-body">
+							This some sample text. Replace it with original text.
+						</div>
+						<div class="myCard-step">
+							3
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="line-heading">
+				<h2 class="head-font">REGISTER</h2>
+				<div class="underline">
+				</div>
+			</div>
+			<p class="text-center">Register now, we will circle back to you as soon as our Research Only Test is available at your location ...</p>
+
+			<div class="forn-wrapper">
+
+				<form action="">
+					<div class="row gy-5">
+						<div class="col-12 col-md-6">
+							<input type="text" placeholder="Full Name">
+						</div>
+						<div class="col-12 col-md-6">
+							<input type="text" class="float-md-end" placeholder="Email ID">
+						</div>
+						<div class="col-12 col-md-6">
+							<input type="text" placeholder="Phone ">
+						</div>
+						<div class="col-12 col-md-6">
+							<input type="text" class="float-md-end" placeholder="Gender">
+						</div>
+						<div class="col-12">
+							<input type="text" class="w-100" placeholder="Full Address">
+						</div>
+						<div class="col-12 col-md-6">
+							<input type="text" placeholder="State">
+						</div>
+						<div class="col-12 col-md-6">
+							<input type="text" class="float-md-end" placeholder="PIN Code">
+						</div>
+					</div>
+					<button class="button">SUBMIT</button>
+				</form>
+			</div>
+
 		</div>
-	</div>
 
-
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
-
-</body>
-
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
