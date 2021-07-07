@@ -1,86 +1,361 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;700&family=Marcellus&display=swap"
+        rel="stylesheet" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;700&family=Marcellus&display=swap"
-		rel="stylesheet">
-
-	<link rel="stylesheet" href="./static/stylesheets/team.css">
-	<title>CareOnco</title>
+    <link rel="stylesheet" href="./static/stylesheets/team.css" />
+    <link rel="stylesheet" href="./static//stylesheets/navbar.css">
+    <title>CareOnco</title>
 </head>
 
 <body>
-	<div class="top-div">
-		<div class="top-div-wrapper text-center">
-			<h1 class="head-font">TEAM</h1>
-			<p>
-				Early stage investment in a R&D focused company that has
-				developed path breaking products for cancer care and early
-				detection and screening/diagnosis.
-			</p>
-		</div>
-	</div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"
+        style="background-color: white; height: 70px; font-size: 15px">
+        <div class="container-fluid" style="background-color: white">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/careonco.jpeg" class="me-2" alt="" width="40" height="40" />
+                <span style="color: #0056be; font-weight: bold">CareOnco</span><span
+                    style="color: #339966; font-weight: bold"> BioTech</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link head-font" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="#">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/TEPscan.html">TEPScan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/enroll.html">Enroll</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link head-font" href="/team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div class="container">
-		<div class="line-heading">
-			<h2 class="">REGISTER</h2>
-			<div class="underline">
-			</div>
-		</div>
+    <div class="top-div">
+        <div class="top-div-wrapper text-center">
+            <h1 class="head-font">Leadership Team</h1>
+            <p class="font-body">
+                Our leadership team brings more than 150 years of experience in biomedical research and driving
+                deep-tech businesses.
+            </p>
+        </div>
+    </div>
 
-		<div class="row row-cols-1 row-cols-md-3 my-5">
-			<div class="col">
-				<div class="flip-card">
-					<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<div class="card-image-div">
-							<img src="https://res.cloudinary.com/tusharbharti4863/image/upload/v1623250780/debarkaSir_v86vft.jpg" alt="Avatar">
-						</div>
-						<div class="front-body">
-							<div>
-								<h3 class="head-font">Debarka Sengupta</h3>
-								<h5>Professor</h5>
-							</div>
-						</div>
+    <div class="container">
+        <div class="line-heading">
+            <h2 class="">Management Team</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 my-5 gy-5">
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/pallav.jpeg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Pallab Mitra
+                                    </h3>
+                                    <h5>CEO</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Pallab Mitra</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Pallab is a co-founder and has over 20 years of experience in Sales, Marketing and
+                                    business Development. He is an M.Sc. in Bio-Chemistry and an MBA from XLRI,
+                                    Jamshedpur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/ashok.jpg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Ashok Juneja
+                                    </h3>
+                                    <h5>Director, Strategy</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Ashok Juneja</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Ten years of Corporate experience working in the health and wellness industry. Rupa
+                                    has worked extensively in the insurance industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/vinit.jpg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Rai Binit Handa
+
+                                    </h3>
+                                    <h5>Director, Operations</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Rai Binit Handa</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Twenty years of corporate experience working in the health-tech space. A veteran in
+                                    Operations and Administration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/rupa.jpeg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Rupa Mitra
+
+                                    </h3>
+                                    <h5>Founding Director</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Rupa Mitra</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Pallab is a co-founder and has over 20 years of experience in Sales, Marketing and
+                                    business Development. He is an M.Sc. in Bio-Chemistry and an MBA from XLRI,
+                                    Jamshedpur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="line-heading">
+            <h2 class="">Advisors</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 my-5 gy-5">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/debarkaSir.jpeg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Debarka Sengupta
+                                    </h3>
+                                    <h5>Chief Scientific Advisor</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Debarka Sengupta</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Dr. Debarka Sengupta is an Associate Professor of Computer Science and Computational
+                                    Biology at IIIT-Delhi. He is also an Hon. Adj. Associate Professor at the Queensland
+                                    University of Technology, Brisbane. Debarka has over 14 years of experience in
+                                    Industry and Academia. His group pioneered single-cell genomics and cancer liquid
+                                    biopsy research in India. His research group developed and patented the 11 TEP-gene
+                                    panel for cancer screening, which is the foundational basis of TEP-Scan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/Gaurav.jpg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Gaurav Ahuja
+                                    </h3>
+                                    <h5>Principal Advisor, Lab Operations</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Gaurav Ahuja</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Dr Gaurav Ahuja is a leading expert in the field of Computational and Molecular
+                                    Biology with a PhD from Cologne , Germany and post-doctoral work at the Lee Kong
+                                    Chian School of Medicine, Singapore. He has also done research work at the Max
+                                    Planck institute in Germany before moving back to India to set up a world class
+                                    Hybrid laboratory, experimenting both the Molecular and Computational Biology at
+                                    IIITD.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image-div">
+                                <img src="./assets/avinash.jpeg" alt="Avatar" />
+                            </div>
+                            <div class="front-body">
+                                <div>
+                                    <h3 class="head-font">
+                                        Avinash Mehrotra
+                                    </h3>
+                                    <h5>Advisor, Finance</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="head-font text-center">Avinash Mehrotra</h3>
+                            <div class="card-back-text">
+                                <p class="text-center">
+                                    Thirty-two years experience in finance and legal. Held CFO roles for large
+                                    multi-business groups. Law graduate and Chartered Accountant, GMP from Harvard
+                                    Business School.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+		<footer>
+			<div class="footer-inner">
+				<div class="row">
+					<div class="col-12 col-md-3 px-md-5 my-4 my-md-0 mr-auto">
+						<h3 class="">Quick Links</h3>
+                        <ul>
+                            <li><a href="/enroll.html">Enroll</a></li>
+                            <li><a href="/publications.html">Publications</a></li>
+                            <li><a href="/team.html">Team</a></li>
+                            <li><a href="/TEPscan.html">TEPScan</a></li>
+                        </ul>
 					</div>
-					<div class="flip-card-back">
-						<h3 class="head-font">Debarka Sengupta</h3> 
-						<div class="card-back-text">
-							<ul>
-								<li>32 years experience infinance and legal</li>
-								<li>Held CFO roles for large multi-business groups</li>
-								<li>Law graduate and Chartered Accountant </li>
-								<li>Law graduate and Chartered Accountant </li>
-								<li>Law graduate and Chartered Accountant </li>
-								<li>Law graduate and Chartered Accountant </li>
-								<li>Law graduate and Chartered Accountant </li>
-								<li>Harvard GMP</li>
-							</ul>
-						</div>
-					</div>
+                    <div class="col-12 col-md-3 px-md-5 my-4 my-md-0 mr-auto">
+
+                    </div>
+					<div class="col-12 col-md-4">
+						<h3 class="">Contact</h3>
+						<p class=""><i class="bi bi-envelope-fill"> hello@careoncobiotech.com </i></p>
+						<p><i class="bi bi-telephone-fill"> +919810209283 </i></p>
+						<a href="{{footer.twitter}}" class="icon mt-5"><i class="bi bi-twitter"></i></a>
+						<a href="{{footer.linkedin}}" class="icon mt-5"><i class="bi bi-linkedin"></i></a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+			<!-- <h5 class="text-center mt-5">Made with 💛 by <a
+				href="https://github.com/tushar19340"
+				style="text-decoration: none;"
+			>
+				Tushar Bharti
+			</a></h5> -->
+		</footer>
+    </div>
 
-
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
-
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,126 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --heading: 48px;
+    --heading-mid: 36px;
+    --text-body: 21px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: "Marcellus", serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ------------------ Top Header CSS ------------------ */
+
+.font-body {
+    font-size: var(--text-body);
+    color: #333333;
+}
+
+.head-font {
+    font-family: "Playfair Display", serif;
+}
+.font-med {
+    font-size: var(--heading-mid);
+}
+
+
+.line-heading {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.line-heading h2 {
+    font-size: var(--heading-mid);
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #4F4F4F;
+}
+div.underline {
+    height: 4px;
+    width: 50%;
+    margin: auto;
+    background-color: yellowgreen;
+    margin-top: 1rem;
+}
+
+
+div.background {
+    position: relative;
+    margin-top: 70px;
+}
+
+.bg-image {
+    max-width: 100%;
+}
+
+div.tag-line {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+.tag-line p {
+    font-size: var(--heading-mid);
+    color: #4076B6;
+    text-align: center;
+}
+
+div.contacts {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button.enroll-button {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #89D100;
+    color: white;
+    border: none;
+    border-radius: 4rem;
+}
+
+.logos {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    width: 30%;
+    padding: 1rem;
+}
+.logos img{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --heading: 36px;
+        --heading-mid: 24px;
+        --text-body: 18px;
+    }
+    button.enroll-button {
+        padding: 5px 1rem 5px 1rem;
+        background-color: #89D100;
+        color: white;
+        border: none;
+        border-radius: 4rem;
+    }
+}

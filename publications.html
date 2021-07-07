@@ -1,28 +1,212 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+	<link
 		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display:wght@400;700&family=Marcellus&display=swap"
 		rel="stylesheet">
-    <title>CareOnco</title>
-  </head>
-  <body>
-    <div class="top-div">
-      <h1></h1>
+
+	<link rel="stylesheet" href="./static/stylesheets/publications.css">
+	<link rel="stylesheet" href="./static/stylesheets/navbar.css">
+	<title>CareOnco</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top"
+        style="background-color: white;height: 70px; font-size: 15px;">
+        <div class="container-fluid" style="background-color: white;">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/careonco.jpeg" class="me-2" alt="" width="40" height="40">
+                <span style="color: #0056BE;font-weight: bold;">Care</span><span style="color: #339966;font-weight: bold;">Onco</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link head-font" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link head-font" href="/publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/TEPscan.html">TEPscan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/enroll.html">Enroll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link head-font" href="/team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+	<div class="top-div">
+		<div class="top-div-wrapper text-center">
+			<h1 class="head-font">PUBLICATONS</h1>
+			<p class="font-body">
+				CareOnco is an R&D company with an indomitable passion for bringing liquid biopsy research to bear. Below are some anecdotes and milestones of our scientific journey.
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="flip-card">
+				<div class="flip-card-inner" id="id1">
+					<div class="flip-card-front">
+						<div class="row g-0" style="height: 100%">
+							<div class="col-md-4 card-image-div">
+								<img src="./assets/pub1.png"
+									alt="..." />
+							</div>
+							<div class="col-md-8 card-body d-flex flex-column justify-content-between">
+								<div class="card-title">
+									<h3 class="font-granville-bold">Molecular signature comprising 11 platelet-genes enables accurate blood-based diagnosis of NSCLC</h3>
+								</div>
+								<div>
+									<p class="card-text mb-0">
+										<small class="text-muted">
+											Authors: Chitrita Goswami, Smriti Chawla, Deepshi Thakral, Himanshu Pant, Pramod Verma, Prabhat Singh Malik, Jayadeva, Ritu Gupta, Gaurav Ahuja & Debarka Sengupta
+										</small>
+									</p>
+
+									<div class="links" id="1">
+										<p class="card-text m-0">
+
+											<small class="text-muted">
+												BMC Genomics
+											</small>
+										</p>
+										<p class="m-0">Year: 2020</p>
+										<a class="" href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07147-z">Link</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-card-back">
+						<div class="abstract">
+							<h3>Abstract</h3>
+							<p>Early diagnosis is crucial for effective medical management of cancer patients. Tissue biopsy has been widely used for cancer diagnosis, but its invasive nature limits its application, especially when repeated biopsies are needed. Over the past few years, genomic explorations have led to the discovery of various blood-based biomarkers. Tumor Educated Platelets (TEPs) have, of late, generated considerable interest due to their ability to infer tumor existence and subtype accurately. So far, a majority of the studies involving TEPs have offered marker-panels consisting of several hundreds of genes. Profiling large numbers of genes incur a significant cost, impeding its diagnostic adoption. As such, it is important to construct minimalistic molecular signatures comprising a small number of genes.</p>
+						</div>
+						<button class="btn btn-primary btn-flip float-right" onclick=flip("id1")>Back</button>
+					</div>
+					<button class="btn btn-primary btn-flip float-right" onclick=flip("id1")>View more</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="flip-card">
+				<div class="flip-card-inner" id="id2">
+					<div class="flip-card-front">
+						<div class="row g-0" style="height: 100%">
+							<div class="col-md-4 card-image-div">
+								<img src="./assets/pub2.jpeg"
+									alt="..." />
+							</div>
+							<div class="col-md-8 card-body d-flex flex-column justify-content-between">
+								<div class="card-title">
+									<h3 class="font-granville-bold">EcTracker: Tracking and elucidating ectopic expression leveraging large-scale scRNA-seq studies</h3>
+								</div>
+								<div>
+									<p class="card-text mb-0">
+										<small class="text-muted">
+											Authors: Vishakha Gautam, Aayushi Mittal, Siddhant Kalra, Sanjay Kumar Mohanty, Krishan Gupta, Komal Rani, Srivatsava Naidu, Tripti Mishra, Debarka Sengupta, Gaurav Ahuja
+										</small>
+									</p>
+
+									<div class="links" id="1">
+										<p class="card-text m-0">
+
+											<small class="text-muted">
+												Briefings in Bioinformatics
+											</small>
+										</p>
+										<p class="m-0">Year: 2021</p>
+										<a class="" href="https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbab237/6309926">Link</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-card-back">
+						<div class="abstract">
+							<h3>Abstract</h3>
+							<p>Early diagnosis is crucial for effective medical management of cancer patients. Tissue biopsy has been widely used for cancer diagnosis, but its invasive nature limits its application, especially when repeated biopsies are needed. Over the past few years, genomic explorations have led to the discovery of various blood-based biomarkers. Tumor Educated Platelets (TEPs) have, of late, generated considerable interest due to their ability to infer tumor existence and subtype accurately. So far, a majority of the studies involving TEPs have offered marker-panels consisting of several hundreds of genes. Profiling large numbers of genes incur a significant cost, impeding its diagnostic adoption. As such, it is important to construct minimalistic molecular signatures comprising a small number of genes.</p>
+						</div>
+						<button class="btn btn-primary btn-flip float-right" onclick=flip("id2")>Back</button>
+					</div>
+					<button class="btn btn-primary btn-flip float-right" onclick=flip("id2")>View more</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<footer>
+			<div class="footer-inner">
+				<div class="row">
+					<div class="col-12 col-md-3 px-md-5 my-4 my-md-0 mr-auto">
+						<h3 class="">Quick Links</h3>
+                        <ul>
+                            <li><a href="/enroll.html">Enroll</a></li>
+                            <li><a href="/publications.html">Publications</a></li>
+                            <li><a href="/team.html">Team</a></li>
+                            <li><a href="/TEPscan.html">TEPScan</a></li>
+                        </ul>
+					</div>
+                    <div class="col-12 col-md-3 px-md-5 my-4 my-md-0 mr-auto">
+
+                    </div>
+					<div class="col-12 col-md-4">
+						<h3 class="">Contact</h3>
+						<p class=""><i class="bi bi-envelope-fill"> hello@careoncobiotech.com </i></p>
+						<p><i class="bi bi-telephone-fill"> +919810209283 </i></p>
+						<a href="{{footer.twitter}}" class="icon mt-5"><i class="bi bi-twitter"></i></a>
+						<a href="{{footer.linkedin}}" class="icon mt-5"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- <h5 class="text-center mt-5">Made with 💛 by <a
+				href="https://github.com/tushar19340"
+				style="text-decoration: none;"
+			>
+				Tushar Bharti
+			</a></h5> -->
+		</footer>
     </div>
 
+	<script>
+		function flip(id) {
+			document.getElementById(id).classList.toggle("flip")
+		}
+	</script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>

@@ -22,3 +22,52 @@ nav.navbar {
 }
 
 /* ------------------------------------ */
+
+/* ------------------ Footer CSS ------------------ */
+
+
+.footer {
+    background-color: #262626;
+    color: #70961d;
+    margin-top: 10rem;
+    padding: 3rem 0;
+}
+.footer-inner {
+    width: 70%;
+    margin: auto;
+}
+.footer p{
+    margin-bottom: 0;
+}
+.footer-image img {
+    width: 100%;
+    padding-bottom: 0.2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer ul li a {
+    /* text-decoration: none; */
+    color: #70961d;
+}
+.icon {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    padding-right: 0.8rem;
+    color: #70961d;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .footer-inner {
+        width: 90%;
+    }
+    .footer-image img {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-bottom: 0.2rem;
+    }
+}

@@ -1,0 +1,198 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --heading: 48px;
+    --heading-mid: 36px;
+    --text-body: 21px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Manrope", sans-serif; */
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ------------------ Top Header CSS ------------------ */
+
+.font-body {
+    font-size: var(--text-body);
+}
+
+.head-font {
+    font-family: "Playfair Display", serif;
+}
+.font-med {
+    font-size: var(--heading-mid);
+}
+
+.top-div {
+    height: 50vh;
+    max-height: 700px;
+    background-color: #d2ff73;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.top-div-wrapper {
+    position: relative;
+    height: fit-content;
+    width: 60%;
+}
+
+.top-div h1 {
+    font-size: var(--heading);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.line-heading {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.line-heading h2 {
+    font-size: var(--heading-mid);
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #4F4F4F;
+}
+div.underline {
+    height: 4px;
+    width: 50%;
+    margin: auto;
+    background-color: #4F4F4F;
+    margin-top: 1rem;
+}
+
+/* ------------------------------------ */
+
+/* ----------------- Flip Card CSS ---------------  */
+
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 260px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 10%)!important;
+}
+
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+} */
+
+.flip {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-bottom: 0.5rem solid yellowgreen;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+}
+
+.flip-card-back {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    transform: rotateX(180deg);
+}
+
+button.btn-flip {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1.3rem;
+}
+
+.card-body {
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.card-image-div img {
+    padding: 0rem;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.card-image-div {
+    max-height: 95%;
+    overflow: hidden;
+}
+
+.card-title h3 {
+    font-size: 1.3rem;
+}
+
+.links a {
+    /* display: block; */
+}
+
+div.abstract {
+    /* background-color: red; */
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --heading: 36px;
+        --heading-mid: 24px;
+        --text-body: 18px;
+    }
+    .flip-card {
+        height: 550px;
+    }
+    div.abstract {
+        height: 400px;
+    }
+    .flip {
+        transform: rotateY(180deg);
+    }
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-image-div {
+        max-height: 70%;
+        overflow: hidden;
+    }
+  }
