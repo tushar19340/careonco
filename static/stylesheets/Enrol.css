@@ -67,7 +67,6 @@ body {
 }
 .line-heading h2 {
     font-size: var(--heading-mid);
-    font-family: 'Marcellus', serif;
     font-weight: bold;
     text-align: center;
     color: #4F4F4F;
