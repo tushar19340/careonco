@@ -60,8 +60,12 @@ div.background {
     margin-top: 70px;
 }
 
-.bg-image {
-    max-width: 100%;
+.bg-image-web {
+    width: 100%;
+}
+.bg-image-mobile {
+    width: 100%;
+    display: none;
 }
 
 div.tag-line {
@@ -93,9 +97,7 @@ button.enroll-button {
 
 .logos {
     width: 50%;
-    height: 50px;
     margin: auto;
-    margin-top: 5rem;
 
     display: flex;
     justify-content: center;
@@ -122,5 +124,14 @@ button.enroll-button {
         color: white;
         border: none;
         border-radius: 4rem;
+    }
+    .logos {
+        width: 100%;
+    }
+    .bg-image-web {
+        display: none;
+    }
+    .bg-image-mobile {
+        display: block;
     }
 }
