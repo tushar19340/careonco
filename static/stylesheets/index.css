@@ -96,11 +96,10 @@ button.enroll-button {
 }
 
 .logos {
-    width: 50%;
     margin: auto;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .image {
